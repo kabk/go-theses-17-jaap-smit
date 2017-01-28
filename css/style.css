@@ -11,13 +11,17 @@ html, body {
   margin: 0 auto;
 }
 
+.description {
+  padding-left: 10px;
+}
+
 .timeline {
   margin-bottom: 4em;
 }
 
 .timeline-item {
   box-sizing: border-box;
-  padding: .75em;
+  padding: 0.75em;
   position: relative;
 }
 
@@ -57,6 +61,8 @@ html, body {
   font-size: 1.5em;
   font-family: Helvetica Neue, Helvetica, sans-serif;
   margin-bottom: .25em;
+  margin-left: 7px;
+  padding-top: 0.1em;
 }
 
 .title {
