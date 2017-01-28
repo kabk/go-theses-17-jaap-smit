@@ -1,0 +1,204 @@
+html, body {
+  background-color: #000;
+  margin: 0;
+  font-family: monospace;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.timeline {
+  margin-bottom: 4em;
+}
+
+.timeline-item {
+  box-sizing: border-box;
+  padding: .75em;
+  position: relative;
+}
+
+.timeline-item + .timeline-item {
+  margin-top: 0em;
+}
+
+.timeline-item img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 0.5px solid white;
+}
+
+.footnote {
+  font-family: monospace;
+  font-size: 0.8em; 
+  margin-top: -1em;
+  margin-bottom: 1em;
+  display:block;
+  clear:both;
+}
+
+.footnote2 {
+  font-family: monospace;
+  font-size: 0.8em; 
+  margin-top: 2em;
+  margin-bottom: -1.7em;
+  display:block;
+  clear:both;
+}
+
+.year {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  margin-bottom: .25em;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  margin-bottom: -1em;
+}
+
+.timeline > .timeline-item:nth-child(odd) {
+  width: 100%;
+}
+.timeline > .timeline-item:nth-child(odd) .year {
+  text-align: left;
+  display: block;
+}
+@media (min-width: 500px) {
+  .timeline > .timeline-item:nth-child(odd) {
+    width: 50%;
+    border: none;
+    padding-right: 1.5em;
+  }
+  .timeline > .timeline-item:nth-child(odd):after {
+    content: "";
+    border-left: 2px solid #fff;
+    height: 100%;
+    position: absolute;
+    right: -1px;
+    top: .75em;
+  }
+  .timeline > .timeline-item:nth-child(odd) .year {
+    text-align: right;
+    display: block;
+  }
+  .timeline > .timeline-item:nth-child(odd) .year:after {
+    content: "";
+    border-right: 2px solid #fff;
+    position: absolute;
+    transform: rotate(90deg);
+    display: block;
+    height: .25em;
+    width: .25em;
+    right: 0;
+    top: 1em;
+  }
+}
+
+.timeline > .timeline-item:nth-child(even) {
+  width: 100%;
+}
+.timeline > .timeline-item:nth-child(even) .year {
+  text-align: left;
+  display: block;
+}
+@media (min-width: 500px) {
+  .timeline > .timeline-item:nth-child(even) {
+    width: 50%;
+    border: none;
+    margin-left: 50%;
+  }
+  .timeline > .timeline-item:nth-child(even):before {
+    content: "";
+    border-left: 2px solid #fff;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+  }
+  .timeline > .timeline-item:nth-child(even) .year:before {
+    content: "";
+    border-right: 2px solid #fff;
+    position: absolute;
+    transform: rotate(90deg);
+    display: block;
+    height: .25em;
+    width: .25em;
+    left: 0;
+    top: 1em;
+  }
+}
+
+img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray; /* IE 6-9 */
+}
+
+img:hover {
+   -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+}
+
+body {
+    background: url(http://transit7.cargocollective.com/1/15/501659/11744732/Background3.jpg) no-repeat 50% 50% fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.floating-menu {
+    font-family: monospace;
+    color: black;
+    -webkit-text-stroke-width: 1.1px;
+    -webkit-text-stroke-color: white;
+    font-size: 1.415em;
+    text-shadow: 1px 0px 10px black, 1px 0px 0px black, 1px 0px 1px black, 1px 0px 1px black;
+    padding-top: 13px;
+    padding-left: 18px;
+    padding-bottom: 10px;
+    width: 320px;
+    z-index: 100;
+    position: fixed;
+}
+
+.floating-menu a, 
+.floating-menu h3 {
+    font-size: 0.88em;
+    font-style: bold;
+    display: block;
+    margin: 0em;
+    color: white;
+}
+
+.vert-space1{
+    padding-top: -10px;
+}
+
+.vert-space2{
+    padding-top: 8px;
+}
+
+.vert-space3{
+    padding-top: 20px;
+}
+
+a:link    {color:white; background-color:transparent; text-decoration:none}
+a:visited {color:white; background-color:transparent; text-decoration:none}
+a:hover   {color:white; background-color:transparent; text-decoration:underline}
+a:active  {color:white; background-color:transparent; text-decoration:underline}
