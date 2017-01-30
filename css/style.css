@@ -161,7 +161,7 @@ img:hover {
 }
 
 body {
-    background: url(../images/background3.jpg) no-repeat 50% 50% fixed; 
+    background: url(../images/Shield_Background.png) no-repeat 50% 50% fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -178,7 +178,7 @@ body {
     padding-top: 13px;
     padding-left: 18px;
     padding-bottom: 10px;
-    width: 320px;
+    width: 180px;
     z-index: 100;
     position: fixed;
 }
@@ -193,15 +193,19 @@ body {
 }
 
 .vert-space1{
-    padding-top: -10px;
+    padding-top: 0px;
 }
 
 .vert-space2{
-    padding-top: 8px;
+    padding-top: 6px;
 }
 
 .vert-space3{
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+.vert-space4{
+    padding-top: 14px;
 }
 
 a:link    {color:white; background-color:transparent; text-decoration:none}
